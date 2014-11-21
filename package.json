@@ -1,0 +1,29 @@
+{
+  "name": "gulp-es6-module-bundler",
+  "version": "0.1.0",
+  "description": "Compiles your modules into one single bundle",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "es6",
+    "bundler",
+    "esnext",
+    "module",
+    "build"
+  ],
+  "author": "Sergey Protko <fesors@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.3.0"
+  },
+  "dependencies": {
+    "es6-module-transpiler": "^0.9.5",
+    "gulp-util": "^3.0.1"
+  }
+}
