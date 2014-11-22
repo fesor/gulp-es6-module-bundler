@@ -1,5 +1,6 @@
 var ModuleResolver = require('../lib/module_resolver');
-var should = require('should');
+  var should = require('should');
+  var file = require('./utils').file;
 
 describe('Module Resolver', function () {
 
@@ -35,14 +36,3 @@ describe('Module Resolver', function () {
 
 });
 
-function file(relative, content) {
-
-  return {
-    relative: relative,
-    contents: {
-      toString: function () {
-        return content;
-      }
-    }
-  };
-}
