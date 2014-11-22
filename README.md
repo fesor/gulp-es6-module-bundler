@@ -36,8 +36,9 @@ Map of global modules which will not be bundled.
 
 ## TODO
  - Working solution
- - Documentation
+ - Global modules handling
  - gulp-sourcemaps support
+ - Documentation
 
 ## Contribution
 TODO
