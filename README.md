@@ -17,31 +17,12 @@ gulp.task('build', function () {
   var modules = gulp.src('src/lib/**/*.js');
 
   gulp.src('src/index.js')
-    .pipe(bundler(modules, {
-      // map of external deps and where to get them
-      // For example our library depends of jQuery and Lodash
-      globals: {'$': 'window.jQuery', '_': 'window._'}
-    }))
-    .pipe(
+    .pipe(bundler(modules))
     .pipe(gulp.dest('dist/')
   ;
 })
 ```
 
-### Options
-You can pass optional options as second argument
-
-#### globals {Object}
-Map of global modules which will not be bundled.
-
-## TODO
- - Working solution
- - Global modules handling
- - gulp-sourcemaps support
- - Documentation
-
-## Contribution
-TODO
-
 ## Credits
-TODO
+
+- [ES6-module-transpiler](https://github.com/esnext/es6-module-transpiler)
